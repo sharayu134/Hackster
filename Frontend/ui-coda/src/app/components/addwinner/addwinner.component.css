@@ -1,0 +1,18 @@
+#main {
+    padding-top: 5%;
+    text-align: center;
+}
+
+h2 {
+    margin: 1%;
+}
+
+.box {
+    display: flex;
+    align-items: around;
+    justify-content: around;
+  }
+  
+#winnerform{
+width: 30%;
+}

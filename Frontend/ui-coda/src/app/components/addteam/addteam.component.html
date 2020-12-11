@@ -1,0 +1,32 @@
+<div class="container" id="main">
+<H2>Fill Out The Details</H2>
+<div class="container" id="winnerform">
+  <fieldset class="form-group">
+    <label for="">Enter Team Name</label>
+    <input type="text" [(ngModel)]="team.team_name" class="form-control" name="team_name" required="required">
+</fieldset>
+
+    <fieldset class="form-group">
+        <label for="">Wins</label>
+        <input type="number" min=1 [(ngModel)]="team.wins" class="form-control" name="wins" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="">Losses</label>
+        <input type="number" min=1 [(ngModel)]="team.losses" class="form-control" name="losses" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="">Ties</label>
+        <input type="number" min=1 [(ngModel)]="team.ties" class="form-control" name="ties" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="">Score</label>
+        <input type="number" min=1 [(ngModel)]="team.score" class="form-control" name="score" required="required">
+    </fieldset>
+
+    <div class="d-flex justify-content-around"> <button type="submit" class="btn btn-primary" (click)="saveTeam()">Add Team</button>
+        <button  class="btn btn-primary" (click)="back()">Back</button> </div>
+    
+    <!-- *ngIf="(loan.loanAmount>0 && loan.loanAmount && loan.paymentFrequency>0 &&loan.interestRate>0 && loan.tenure>0 )" -->
+</div>
+</div>
